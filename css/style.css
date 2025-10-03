@@ -276,18 +276,6 @@ footer {
     color: #333;
 }
 
-/* Responsive: columnas apiladas en móviles */
-@media (max-width: 768px) {
-    .tendencia {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .tendencia img {
-        width: 100%;
-        height: auto;
-    }
-}
-
 /* Contenedor de las prendas */
 .prendas {
     display: flex;
@@ -387,13 +375,6 @@ footer {
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-/* Responsivo para móviles */
-@media (max-width: 768px) {
-    .moda-sostenible {
-        flex-direction: column;
-    }
-}
-
 /* Galería estilo Pinterest (tendencias) */
 .galeria {
     column-count: 6; /* Número de columnas */
@@ -418,11 +399,52 @@ footer {
 /* Responsive */
 @media (max-width: 1024px) {
     .galeria {
-        column-count: 2;
+        column-count: 3;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .galeria {
+        column-count: 2;
+    }
+    .hero-container img {
+        width: 100%;  /* para que ocupe todo el ancho disponible */
+        height: auto;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        right: 5%;      /* evita que se salga del viewport */
+        text-align: center; /* centramos texto en pantallas pequeñas */
+    }
+
+    .hero-text h2 {
+        font-size: 2rem; /* más pequeño en móvil */
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+    .moda-sostenible {
+        flex-direction: column;
+    }
+    .columna-derecha video {
+        width: 100%;
+        height: auto;
+    }
+    .tendencia {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tendencia img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
     .galeria {
         column-count: 1;
     }
