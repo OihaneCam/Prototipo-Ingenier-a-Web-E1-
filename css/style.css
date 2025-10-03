@@ -430,6 +430,7 @@ footer {
 
     .btn{
         font-size: 0.7rem;
+        padding: 7px 15px;
     }
     .moda-sostenible {
         flex-direction: column;
