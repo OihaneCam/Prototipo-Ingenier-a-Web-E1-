@@ -363,15 +363,16 @@ footer {
     flex: 2;
 }
 
-/* Columna derecha solo para el video */
+/* Columna derecha solo para la foto */
 .columna-derecha {
     flex: 1;
 }
 
-.columna-derecha video {
-    width: auto;
-    height: 600px;
+.columna-derecha img {
+    width: 100%;
+    max-height: 600px;
     border-radius: 8px;
+    object-fit: cover;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
