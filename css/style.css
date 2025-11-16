@@ -136,12 +136,6 @@ footer {
 }
 
 /* Logo + Título */
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 5px; /* espacio entre el logo y el texto */
-}
-
 .logo {
     width: 60px; 
     height: auto;
@@ -346,10 +340,14 @@ footer {
 }
 
 .moda-sostenible {
+    margin-top: 2rem;
+}
+
+/* Sección con columnas (Materiales y foto) */
+.moda-sostenible-columnas {
     display: flex;
     gap: 30px;
     align-items: flex-start;
-    margin-top: 2rem;
 }
 
 .lista-sostenible {
@@ -374,6 +372,27 @@ footer {
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.indice-interno ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.indice-interno a {
+    padding: 8px 15px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.indice-interno a:hover {
+    background-color: #444;
 }
 
 /* Galería estilo Pinterest (tendencias) */
@@ -435,10 +454,6 @@ footer {
     }
     .moda-sostenible {
         flex-direction: column;
-    }
-    .columna-derecha video {
-        width: 100%;
-        height: auto;
     }
     .tendencia {
         flex-direction: column;

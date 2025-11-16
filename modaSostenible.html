@@ -20,10 +20,45 @@
     </header>
 
     <main>
-    <section class="moda-sostenible">
-        <!-- Columna izquierda: tabla + lista -->
+
+    <!-- Navegación interna -->
+    <nav class="indice-interno">
+        <ul>
+            <li><a href="#que-es">¿Qué es la moda sostenible?</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#materiales">Materiales sostenibles</a></li>
+            <li><a href="#consejos">Consejos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección 1: Qué es la moda sostenible -->
+    <section id="que-es" class="moda-sostenible">
+        <h2 class="titulo-pagina">¿Qué es la moda sostenible?</h2>
+        <p>
+            La moda sostenible busca minimizar el impacto ambiental y social 
+            durante el proceso de producción, distribución y consumo de ropa.
+            Se centra en el uso responsable de recursos, materiales ecológicos 
+            y condiciones laborales éticas.
+        </p>
+    </section>
+
+    <!-- Sección 2: Beneficios -->
+    <section id="beneficios" class="moda-sostenible">
+        <h2 class="titulo-pagina">Beneficios</h2>
+        <ul class="lista-sostenible">
+            <li>Reduce la contaminación del agua y del aire.</li>
+            <li>Disminuye el uso de químicos tóxicos.</li>
+            <li>Apoya a empresas con prácticas éticas.</li>
+            <li>Favorece materiales reciclados y reutilizables.</li>
+        </ul>
+    </section>
+
+    <!-- Sección 3: Materiales y tabla -->
+    <section id="materiales" class="moda-sostenible-columnas">
         <div class="columna-izquierda">
+            
             <h2 class="titulo-pagina">Materiales y su impacto</h2>
+
             <table class="tabla-sostenible">
                 <thead>
                     <tr>
@@ -36,22 +71,27 @@
                     <tr>
                         <td>Algodón</td>
                         <td>Gran consumo de agua y pesticidas</td>
-                        <td>Algodón orgánico: menos químicos</td>
+                        <td>Algodón orgánico</td>
                     </tr>
                     <tr>
                         <td>Cuero</td>
                         <td>Contaminación por curtido</td>
-                        <td>Cuero vegano: menor huella de carbono</td>
+                        <td>Cuero vegano</td>
                     </tr>
                     <tr>
                         <td>Poliéster</td>
                         <td>Microplásticos en océanos</td>
-                        <td>Poliéster reciclado: economía circular</td>
+                        <td>Poliéster reciclado</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h2 class="titulo-pagina">Consejos para un armario sostenible</h2>
+            <aside class="info-extra">
+                <h3>Dato curioso</h3>
+                <p>La moda sostenible puede reducir en un 30% el impacto ambiental del sector textil.</p>
+            </aside>
+
+            <h2 id="consejos" class="titulo-pagina">Consejos para un armario sostenible</h2>
             <ul class="lista-sostenible">
                 <li>Compra ropa de segunda mano.</li>
                 <li>Opta por marcas con certificaciones ecológicas.</li>
@@ -60,9 +100,12 @@
             </ul>
         </div>
 
-        <!-- Columna derecha: foto -->
+        <!-- Columna derecha: imagen -->
         <div class="columna-derecha">
-            <img src="img/modaSostenible.jpeg" alt="Moda sostenible" class="imagen-sostenible">
+            <figure class="foto-sostenible">
+                <img src="img/modaSostenible.jpeg" alt="Moda sostenible" class="imagen-sostenible">
+                <figcaption>La moda sostenible es el futuro de la industria textil.</figcaption>
+            </figure>
         </div>
     </section>
 
